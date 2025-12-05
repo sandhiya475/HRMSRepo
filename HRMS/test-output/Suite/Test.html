@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 05 18:16:38 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82774 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='integrationTest.HrmIntegrationTest.listOfJobPosition()'><b>listOfJobPosition</b><br>Test class: integrationTest.HrmIntegrationTest<br/>
+<a href="#Output-1281325903" onClick='toggleBox("Output-1281325903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1281325903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1281325903">
+Job position created successfully<br/>
+Created job position is present in list of job position viewed successfully..<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>integrationTest.HrmIntegrationTest@74e52303</td></tr>
+<tr>
+<td title='systemTest.HrmSystemTest.approveLeave()'><b>approveLeave</b><br>Test class: systemTest.HrmSystemTest<br/>
+<a href="#Output-277155095" onClick='toggleBox("Output-277155095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-277155095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-277155095">
+Employee leave applied successfully<br/>
+Approved leave message present in employee list<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>systemTest.HrmSystemTest@158da8e</td></tr>
+<tr>
+<td title='smokeTest.HrmSmokeTest.createEmployeeTest()'><b>createEmployeeTest</b><br>Test class: smokeTest.HrmSmokeTest<br/>
+<a href="#Output-836397870" onClick='toggleBox("Output-836397870", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-836397870" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-836397870">
+Create New employee page is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>smokeTest.HrmSmokeTest@6dc17b83</td></tr>
+<tr>
+<td title='systemTest.HrmSystemTest.deleteEmployee()'><b>deleteEmployee</b><br>Test class: systemTest.HrmSystemTest<br/>
+<a href="#Output-1152003603" onClick='toggleBox("Output-1152003603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1152003603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1152003603">
+New employee created successfully<br/>
+Employee name present in the list of employee names..<br/>
+Employee Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>systemTest.HrmSystemTest@158da8e</td></tr>
+<tr>
+<td title='smokeTest.HrmSmokeTest.CreateJobPositionTest()'><b>CreateJobPositionTest</b><br>Test class: smokeTest.HrmSmokeTest<br/>
+<a href="#Output-128028301" onClick='toggleBox("Output-128028301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-128028301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-128028301">
+Create New Job Position page is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>smokeTest.HrmSmokeTest@6dc17b83</td></tr>
+<tr>
+<td title='systemTest.HrmSystemTest.approveExpenceTest()'><b>approveExpenceTest</b><br>Test class: systemTest.HrmSystemTest<br/>
+<a href="#Output-510207317" onClick='toggleBox("Output-510207317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510207317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510207317">
+Expense Report Submitted Successfully<br/>
+Expense has Approved and Paid<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>systemTest.HrmSystemTest@158da8e</td></tr>
+<tr>
+<td title='integrationTest.HrmIntegrationTest.listOfEmployee()'><b>listOfEmployee</b><br>Test class: integrationTest.HrmIntegrationTest<br/>
+<a href="#Output-631410926" onClick='toggleBox("Output-631410926", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-631410926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-631410926">
+New employee created successfully<br/>
+Employee name present in the list of employee names..<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>integrationTest.HrmIntegrationTest@74e52303</td></tr>
+<tr>
+<td title='smokeTest.HrmSmokeTest.leaveRequestTest()'><b>leaveRequestTest</b><br>Test class: smokeTest.HrmSmokeTest<br/>
+<a href="#Output-1628305283" onClick='toggleBox("Output-1628305283", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1628305283" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1628305283">
+Create New leave request page is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>smokeTest.HrmSmokeTest@6dc17b83</td></tr>
+<tr>
+<td title='integrationTest.HrmIntegrationTest.employeeApplyLeave()'><b>employeeApplyLeave</b><br>Test class: integrationTest.HrmIntegrationTest<br/>
+<a href="#Output-476234749" onClick='toggleBox("Output-476234749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-476234749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-476234749">
+Employee created successfully<br/>
+Employee leave applied successfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>integrationTest.HrmIntegrationTest@74e52303</td></tr>
+</table><p>
+</body>
+</html>
