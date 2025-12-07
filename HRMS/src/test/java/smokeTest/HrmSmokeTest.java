@@ -1,10 +1,11 @@
 package smokeTest;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import inno.hrm.basetest.BaseClass1;
 import inno.hrm.objectRepositoryUtility.HomePage;
 import inno.hrm.objectRepositoryUtility.HrmPage;
-
+@Listeners(inno.hrm.listenerutility.ListImpClass.class)
 public class HrmSmokeTest extends BaseClass1{
 @Test(groups = "SmokeTest")
 public void createEmployeeTest() {

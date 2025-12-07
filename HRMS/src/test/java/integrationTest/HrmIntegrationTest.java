@@ -1,6 +1,7 @@
 package integrationTest;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import inno.hrm.basetest.BaseClass1;
 import inno.hrm.objectRepositoryUtility.EmpListPage;
@@ -11,7 +12,7 @@ import inno.hrm.objectRepositoryUtility.LoginPage;
 import inno.hrm.objectRepositoryUtility.NewEmployeePage;
 import inno.hrm.objectRepositoryUtility.NewJobPositionsPage;
 import inno.hrm.objectRepositoryUtility.NewLeavePage;
-
+@Listeners(inno.hrm.listenerutility.ListImpClass.class)
 public class  HrmIntegrationTest extends BaseClass1{
 @Test(groups = "RegressionTest")
 public void listOfEmployee() throws Throwable{

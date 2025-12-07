@@ -5,19 +5,31 @@
       <![CDATA[---Connect to DB,Report config---]]>
     </line>
     <line>
-      <![CDATA[Create New Job Position page is displayed successfully]]>
+      <![CDATA[Expense Report Submitted Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Expense has Approved and Paid]]>
     </line>
     <line>
       <![CDATA[---Logout the Application---]]>
     </line>
     <line>
-      <![CDATA[Create New employee page is displayed successfully]]>
+      <![CDATA[Employee leave applied successfully]]>
+    </line>
+    <line>
+      <![CDATA[Approved leave message present in employee list]]>
     </line>
     <line>
       <![CDATA[---Logout the Application---]]>
     </line>
     <line>
-      <![CDATA[Create New leave request page is displayed successfully]]>
+      <![CDATA[New employee created successfully]]>
+    </line>
+    <line>
+      <![CDATA[Employee name present in the list of employee names..]]>
+    </line>
+    <line>
+      <![CDATA[Employee Record deleted successfully]]>
     </line>
     <line>
       <![CDATA[---Logout the Application---]]>
@@ -29,96 +41,108 @@
       <![CDATA[---Close DB,Report Backup---]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-06T21:49:04 IST" name="Default suite" finished-at="2025-12-06T21:51:16 IST" duration-ms="132776">
+  <suite started-at="2025-12-07T22:02:16 IST" name="Default suite" finished-at="2025-12-07T22:03:40 IST" duration-ms="84087">
     <groups>
-      <group name="SmokeTest">
-        <method signature="HrmSmokeTest.CreateJobPositionTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" name="CreateJobPositionTest" class="smokeTest.HrmSmokeTest"/>
-        <method signature="HrmSmokeTest.createEmployeeTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" name="createEmployeeTest" class="smokeTest.HrmSmokeTest"/>
-        <method signature="HrmSmokeTest.leaveRequestTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" name="leaveRequestTest" class="smokeTest.HrmSmokeTest"/>
-      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="HrmSystemTest.approveExpenceTest()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" name="approveExpenceTest" class="systemTest.HrmSystemTest"/>
+        <method signature="HrmSystemTest.approveLeave()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" name="approveLeave" class="systemTest.HrmSystemTest"/>
+        <method signature="HrmSystemTest.deleteEmployee()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" name="deleteEmployee" class="systemTest.HrmSystemTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-12-06T21:49:04 IST" name="Default test" finished-at="2025-12-06T21:51:16 IST" duration-ms="132776">
-      <class name="smokeTest.HrmSmokeTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:49:03 IST" name="configBS" finished-at="2025-12-06T21:49:04 IST" duration-ms="24" status="PASS">
+    <test started-at="2025-12-07T22:02:16 IST" name="Default test" finished-at="2025-12-07T22:03:40 IST" duration-ms="84087">
+      <class name="systemTest.HrmSystemTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:02:16 IST" name="configBS" finished-at="2025-12-07T22:02:16 IST" duration-ms="21" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Connect to DB,Report config---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:49:04 IST" name="configBC" finished-at="2025-12-06T21:49:08 IST" duration-ms="4400" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:02:16 IST" name="configBC" finished-at="2025-12-07T22:02:20 IST" duration-ms="3351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:49:08 IST" name="configBM" finished-at="2025-12-06T21:50:49 IST" duration-ms="101447" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:02:20 IST" name="configBM" finished-at="2025-12-07T22:02:43 IST" duration-ms="22753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="CreateJobPositionTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:50:49 IST" name="CreateJobPositionTest" finished-at="2025-12-06T21:50:53 IST" duration-ms="3836" status="PASS">
+        <test-method signature="approveExpenceTest()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:02:43 IST" name="approveExpenceTest" finished-at="2025-12-07T22:03:00 IST" duration-ms="17834" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Create New Job Position page is displayed successfully]]>
+              <![CDATA[Expense Report Submitted Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Expense has Approved and Paid]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CreateJobPositionTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:50:53 IST" name="configAM" finished-at="2025-12-06T21:51:01 IST" duration-ms="7926" status="PASS">
+        </test-method> <!-- approveExpenceTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:00 IST" name="configAM" finished-at="2025-12-07T22:03:02 IST" duration-ms="1803" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Logout the Application---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:01 IST" name="configBM" finished-at="2025-12-06T21:51:03 IST" duration-ms="1881" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:02 IST" name="configBM" finished-at="2025-12-07T22:03:04 IST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createEmployeeTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:03 IST" name="createEmployeeTest" finished-at="2025-12-06T21:51:08 IST" duration-ms="4997" status="PASS">
+        <test-method signature="approveLeave()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:04 IST" name="approveLeave" finished-at="2025-12-07T22:03:24 IST" duration-ms="20109" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Create New employee page is displayed successfully]]>
+              <![CDATA[Employee leave applied successfully]]>
+            </line>
+            <line>
+              <![CDATA[Approved leave message present in employee list]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createEmployeeTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:08 IST" name="configAM" finished-at="2025-12-06T21:51:09 IST" duration-ms="1314" status="PASS">
+        </test-method> <!-- approveLeave -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:24 IST" name="configAM" finished-at="2025-12-07T22:03:25 IST" duration-ms="1092" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Logout the Application---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:09 IST" name="configBM" finished-at="2025-12-06T21:51:10 IST" duration-ms="994" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:25 IST" name="configBM" finished-at="2025-12-07T22:03:26 IST" duration-ms="1209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="leaveRequestTest()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:10 IST" name="leaveRequestTest" finished-at="2025-12-06T21:51:14 IST" duration-ms="3452" status="PASS">
+        <test-method signature="deleteEmployee()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:26 IST" name="deleteEmployee" finished-at="2025-12-07T22:03:38 IST" duration-ms="12166" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Create New leave request page is displayed successfully]]>
+              <![CDATA[New employee created successfully]]>
+            </line>
+            <line>
+              <![CDATA[Employee name present in the list of employee names..]]>
+            </line>
+            <line>
+              <![CDATA[Employee Record deleted successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- leaveRequestTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:14 IST" name="configAM" finished-at="2025-12-06T21:51:16 IST" duration-ms="1894" status="PASS">
+        </test-method> <!-- deleteEmployee -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:38 IST" name="configAM" finished-at="2025-12-07T22:03:40 IST" duration-ms="1791" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Logout the Application---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:16 IST" name="configAC" finished-at="2025-12-06T21:51:16 IST" duration-ms="535" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:40 IST" name="configAC" finished-at="2025-12-07T22:03:40 IST" duration-ms="481" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Close the Brower---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:smokeTest.HrmSmokeTest@14dd9eb7]" started-at="2025-12-06T21:51:16 IST" name="configAS" finished-at="2025-12-06T21:51:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:systemTest.HrmSystemTest@62150f9e]" started-at="2025-12-07T22:03:40 IST" name="configAS" finished-at="2025-12-07T22:03:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Close DB,Report Backup---]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- smokeTest.HrmSmokeTest -->
+      </class> <!-- systemTest.HrmSystemTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
